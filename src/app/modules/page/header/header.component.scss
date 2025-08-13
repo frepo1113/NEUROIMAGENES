@@ -1,3 +1,32 @@
+.topbar {
+  width: 100%;
+  background-color: #f9f9f9; /* color de fondo claro */
+  border-bottom: 1px solid #e0e0e0; /* línea divisoria opcional */
+  padding: 0.2rem 1rem; /* espacio vertical y horizontal */
+  display: flex;
+  justify-content: flex-end; /* alinear contenido a la derecha */
+  align-items: center;
+  font-size: 0.85rem; /* tamaño de texto */
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* espacio entre items */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem; /* espacio entre icono y texto */
+}
+
+.contact-item img {
+  height: 16px;
+  width: 16px;
+  object-fit: contain;
+}
+
 .navbar-container {
   display: flex;
   align-items: center;
