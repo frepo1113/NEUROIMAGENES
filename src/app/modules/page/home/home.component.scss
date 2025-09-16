@@ -1,73 +1,46 @@
-/* Hero (imagen de fondo) */
 .hero {
   position: relative;
   width: 100%;
-  min-height: 420px;      /* ajusta según prefieras */
-  height: 70vh;           /* ocupa 70% de la altura de la ventana */
-  display: flex;
-  align-items: flex-start; /* texto cerca del tope (cambiar a center para centrar verticalmente) */
-  justify-content: center;
-  padding-top: 56px;      /* separa de la barra superior si tienes una */
-  background-image: url('/assets/hero-building.jpg'); /* <-- ruta en assets */
+  height: 100vh; /* ocupa toda la altura de la ventana */
+  background-image: url('/assets/images/Foto Neuro.png'); /* cambia por tu imagen */
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  color: #123456;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-overlay {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+
+    h1 {
+      font-size: 1.5rem; /* tamaño base */
+      font-weight: bold;
+      color: #004080; /* azul corporativo */
+      line-height: 1.0;
+      text-align: above;
+
+      span {
+        display: block;
+        margin-top: 0.5rem;
+      }
+    }
+  }
 }
 
-/* Capa semi-transparente sobre la imagen para legibilidad */
-.hero-overlay {
-  position: absolute;
-  inset: 0; /* top:0; right:0; bottom:0; left:0; */
-  background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(0,80,140,0.20));
-  z-index: 1;
+/* RESPONSIVE: agrandar más en pantallas grandes */
+@media (min-width: 768px) {
+  .hero .hero-overlay h1 {
+    font-size: 2.5rem;
+  }
 }
 
-/* Logo posicionado encima, esquina superior izquierda dentro del hero */
-.hero-logo {
-  position: absolute;
-  left: 1rem;
-  top: 0.8rem;
-  height: 60px;       /* ajustar tamaño del logo */
-  width: auto;
-  z-index: 3;
-  background: rgba(255,255,255,0.9); /* opcional: marco blanco detrás del logo */
-  padding: 6px;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-}
-
-/* Contenido del hero (texto) */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-/* Título principal */
-.hero-title {
-  margin: 0;
-  padding: 0.5rem 1rem;
-  color: rgba(6,58,98,0.95); /* azul oscuro */
-  font-weight: 700;
-  font-size: 1.9rem; /* ajusta tamaño */
-  text-shadow: 0 1px 0 rgba(255,255,255,0.6); /* suaviza la lectura */
-  max-width: 1100px;
-}
-
-/* Responsive: pantallas grandes y pequeñas */
-@media (min-width: 992px) {
-  .hero { height: 520px; }
-  .hero-logo { height: 70px; }
-  .hero-title { font-size: 2.4rem; }
-}
-
-@media (max-width: 576px) {
-  .hero { height: 300px; padding-top: 48px; }
-  .hero-logo { left: 0.5rem; top: 0.4rem; height: 48px; }
-  .hero-title { font-size: 1.05rem; padding-top: 0.5rem; }
+@media (min-width: 1200px) {
+  .hero .hero-overlay h1 {
+    font-size: 3rem;
+  }
 }
 
