@@ -8,14 +8,13 @@
   background-repeat: no-repeat;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   .hero-overlay {
     width: 100%;
-    text-align: center;
     padding: 2rem;
-
+    text-align: center;
     h1 {
       font-size: 1.5rem; /* tamaño base */
       font-weight: bold;
@@ -34,13 +33,13 @@
 /* RESPONSIVE: agrandar más en pantallas grandes */
 @media (min-width: 768px) {
   .hero .hero-overlay h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .hero .hero-overlay h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
