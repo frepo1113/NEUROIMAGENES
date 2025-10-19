@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-emg',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class EmgComponent {
 
+  constructor(private router: Router) {}
+      
+  returnServices() {
+    this.router.navigate(['/page/servicios']);
+  }
 }

@@ -1,0 +1,111 @@
+:host { display:block; }
+
+/* contenedor exterior con borde blanco fino */
+.home-wrap {
+  padding: 10px;
+  background: linear-gradient(180deg,#083764,#083764); /* top thin blue border effect */
+  display:flex;
+  justify-content:center;
+}
+
+/* caja interior que contiene panel izquierdo y derecho */
+.home-inner{
+  width: 1200px; /* ajustable */
+  background: linear-gradient(180deg, #082e62 0%, #082e62 0%); /* top border illusion */
+  border: 3px solid #083764; /* outer blue frame */
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.03) inset;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* layout de dos columnas */
+.left-panel {
+  width: 42%;
+  background: linear-gradient(180deg, #072f63 0%, #0b4b8a 100%); /* deep blue panel */
+  padding: 36px 24px;
+  box-sizing: border-box;
+  display:flex;
+  align-items:flex-start;
+  color: #ffffff;
+}
+
+/* centraliza contenido interior y agrega textura sutil */
+.left-inner{
+  width:100%;
+  max-width:380px;
+}
+
+/* logo */
+.logo-wrap {
+  display:flex;
+  justify-content:flex-start;
+  margin-bottom: 20px;
+}
+.logo-wrap img{
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+  border: 4px solid #ffffff;
+  background: #fff;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/* textos de contacto */
+.contact {
+  color: #e8f3ff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.contact .small { margin: 6px 0; color: #e6f0fa; opacity: 0.95; }
+
+/* push elements to mimic spacing de la maqueta */
+.spacer { height: 16px; }
+
+/* área derecha con la foto */
+.right-panel{
+  width: 58%;
+  background: linear-gradient(180deg,#e9f7ef,#d7f0e7);
+  padding: 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+}
+
+/* marco blanco alrededor de la foto como en la maqueta */
+.photo-wrap {
+  width: 95%;
+  height: 340px;
+  background: #ffffff;
+  border: 6px solid rgba(255,255,255,0.9);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.photo-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* responsive */
+@media (max-width: 1100px){
+  .home-inner{ width: 95%; display:block; }
+  .left-panel, .right-panel { width:100%; }
+  .photo-wrap{ height: 300px; }
+}
+
+@media (max-width: 600px){
+  .left-inner { max-width: 100%; }
+  .logo-wrap img{ width: 100px; }
+  .photo-wrap { height: 220px; }
+  .contact { font-size: 13px; }
+}

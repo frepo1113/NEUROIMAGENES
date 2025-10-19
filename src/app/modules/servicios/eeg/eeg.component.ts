@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-psg',
-  templateUrl: './psg.component.html',
-  styleUrls: ['./psg.component.scss']
+  selector: 'app-eeg',
+  templateUrl: './eeg.component.html',
+  styleUrls: ['./eeg.component.sass']
 })
-export class PsgComponent {
-
+export class EegComponent {
   constructor(private router: Router) {}
     
   returnServices() {

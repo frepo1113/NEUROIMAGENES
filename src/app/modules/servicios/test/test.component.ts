@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-psg',
-  templateUrl: './psg.component.html',
-  styleUrls: ['./psg.component.scss']
+  selector: 'app-test',
+  templateUrl: './test.component.html',
+  styleUrls: ['./test.component.sass']
 })
-export class PsgComponent {
+export class TestComponent {
 
   constructor(private router: Router) {}
-    
+      
   returnServices() {
     this.router.navigate(['/page/servicios']);
   }

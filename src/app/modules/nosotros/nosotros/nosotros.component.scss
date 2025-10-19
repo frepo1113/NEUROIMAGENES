@@ -1,0 +1,170 @@
+:host { display: block; }
+
+/* fondo general */
+.nosotros-wrap {
+  min-height: 82vh;
+  background: linear-gradient(180deg, #dff6ea 0%, #cfe9d7 100%);
+  display: flex;
+  align-items: flex-start;
+  padding: 18px 28px;
+  gap: 28px;
+  box-sizing: border-box;
+}
+
+/* === Sidebar izquierdo con franja azul === */
+.sidebar {
+  width: 140px;
+  background: linear-gradient(180deg, #9ed7cf, #7fc6c0);
+  border-radius: 6px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: inset -24px 0 40px rgba(255,255,255,0.03);
+}
+
+/* logo */
+.logo img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  display: block;
+}
+
+/* botón circular volver (abajo a la izquierda dentro de la sidebar) */
+.back-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffffff, #dbeee8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #2f6b6b;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* === Contenido principal === */
+.main-content{
+  flex: 1;
+  padding: 6px 18px 28px 18px;
+}
+
+/* Título grande centrado */
+.title{
+  font-family: "Montserrat", sans-serif;
+  color: #083764;
+  font-size: 44px;
+  text-align: center;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+
+/* contenedor para posters / layout centralizado */
+.posters-wrapper{
+  display:flex;
+  justify-content:center;
+  margin-top: 10px;
+  padding: 10px 12px;
+}
+
+/* Grid de posters: columnas con distintos anchos para imitar la maqueta */
+.posters{
+  display: grid;
+  grid-template-columns: 220px 260px 320px 260px 220px;
+  grid-template-rows: 360px 260px;
+  gap: 26px;
+  align-items: start;
+  max-width: 1220px;
+  width: 100%;
+  justify-items: center;
+}
+
+/* Ubicación de cada poster (ajusta los spans para recrear la composición) */
+.poster{
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 2px solid rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(10,20,30,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px;
+}
+
+/* Poster grande central ocupa dos filas */
+.poster--principios {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  width: 100%;
+}
+
+/* poster izquierdo alto (mision) */
+.poster--mision {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* poster vison (debajo en la imagen) */
+.poster--vision {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* poster valores lado izquierdo (o centro-derecha) */
+.poster--valores-left {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+/* poster valores lado derecho (más a la derecha) */
+.poster--valores-right {
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+}
+
+/* imagen dentro del poster */
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* pequeñas correcciones visuales */
+@media (max-width: 1200px) {
+  .posters {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .poster--principios { grid-column: 2 / 3; grid-row: 1 / 3; }
+  .poster--mision { grid-column: 1 / 2; grid-row: 1 / 2; }
+  .poster--vision { grid-column: 1 / 2; grid-row: 2 / 3; }
+  .poster--valores-left { grid-column: 3 / 4; grid-row: 1 / 2; }
+  .poster--valores-right { grid-column: 3 / 4; grid-row: 2 / 3; }
+}
+
+@media (max-width: 600px) {
+  .nosotros-wrap { padding: 10px; }
+  .sidebar { display:flex; flex-direction:row; height:72px; padding:8px; align-items:center; justify-content: center; }
+  .logo img{ width:72px; height:72px; }
+  .back-btn{ margin-left:auto; }
+  .posters { grid-template-columns: 1fr; grid-template-rows: repeat(5, auto); gap: 18px; }
+  .poster { height: 360px; }
+  .title{ font-size: 28px; }
+}
+
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

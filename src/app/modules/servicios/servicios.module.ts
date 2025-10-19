@@ -6,6 +6,8 @@ import { InicialServiciosComponent } from './inicial-servicios/inicial-servicios
 import { VtmComponent } from './vtm/vtm.component';
 import { PsgComponent } from './psg/psg.component';
 import { EmgComponent } from './emg/emg.component';
+import { EegComponent } from './eeg/eeg.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { EmgComponent } from './emg/emg.component';
     InicialServiciosComponent,
     VtmComponent,
     PsgComponent,
-    EmgComponent
+    EmgComponent,
+    EegComponent,
+    TestComponent
   ],
   imports: [
     CommonModule,

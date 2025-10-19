@@ -4,12 +4,16 @@ import { InicialServiciosComponent } from './inicial-servicios/inicial-servicios
 import { VtmComponent } from './vtm/vtm.component';
 import { PsgComponent } from './psg/psg.component';
 import { EmgComponent } from './emg/emg.component';
+import { EegComponent } from './eeg/eeg.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   { path: '', component: InicialServiciosComponent },
   { path: 'vtm', component: VtmComponent },
   { path: 'psg', component: PsgComponent },
-  { path: 'emg', component: EmgComponent }
+  { path: 'emg', component: EmgComponent },
+  { path: 'eeg', component: EegComponent },
+  { path: 'test', component: TestComponent }
 ];
 
 @NgModule({

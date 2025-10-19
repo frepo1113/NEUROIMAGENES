@@ -10,7 +10,7 @@
     </div>
     <div class="contact-item">
       <img src="assets/whatsapp-icon.png" alt="WhatsApp" />
-      <span>3217776156</span>
+      <span>3217776151 - 3217776156</span>
     </div>
   </div>
 </div>
@@ -19,18 +19,28 @@
   <div class="logo">
     <img src="assets/images/Neuroimagenes.png" alt="Neuroimágenes" />
   </div>
-    <nav class="nav-links">
-        <a href="/page/home">INICIO</a>
-        <a href="/page/equipo-medico">EQUIPO MEDICO</a>
-        <a href="/page/nosotros">NOSOTROS</a>
-        <a href="/page/servicios">SERVICIOS</a>
-        <a href="/page/preparacion-examenes">PREPARACIÓN PARA EXÁMENES</a>
-        <a href="/page/contactenos">CONTÁCTENOS</a>
-    </nav>
-    <div class="container-buttons"></div>
+
+  <!-- Botón menú móvil -->
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <!-- Menú -->
+  <nav class="nav-links" [class.active]="menuOpen">
+    <a routerLink="/page/home" (click)="closeMenu()">INICIO</a>
+    <a routerLink="/page/equipo-medico" (click)="closeMenu()">EQUIPO MÉDICO</a>
+    <a routerLink="/page/nosotros" (click)="closeMenu()">NOSOTROS</a>
+    <a routerLink="/page/servicios" (click)="closeMenu()">SERVICIOS</a>
+    <a routerLink="/page/preparacion-examenes" (click)="closeMenu()">PREPARACIÓN PARA EXÁMENES</a>
+    <a routerLink="/page/contactenos" (click)="closeMenu()">CONTÁCTENOS</a>
+  </nav>
+
+  <div class="container-buttons"></div>
 
   <div class="social-icons">
-    <a href="#" aria-label="Facebook"><img src="/assets/facebook-icon.png" alt="Facebook" /></a>
-    <a href="#" aria-label="Instagram"><img src="/assets/instagram-icon.png" alt="Instagram" /></a>
+    <a href="#" aria-label="Facebook"><img src="assets/facebook-icon.png" alt="Facebook" /></a>
+    <a href="#" aria-label="Instagram"><img src="assets/instagram-icon.png" alt="Instagram" /></a>
   </div>
 </header>

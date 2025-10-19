@@ -1,60 +1,56 @@
 .topbar {
   width: 100%;
-  background-color: #f9f9f9; /* color de fondo claro */
-  border-bottom: 1px solid #e0e0e0; /* línea divisoria opcional */
-  padding: 0.2rem 1rem; /* espacio vertical y horizontal */
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.2rem 1rem;
   display: flex;
-  justify-content: flex-end; /* alinear contenido a la derecha */
+  justify-content: flex-end;
   align-items: center;
-  font-size: 0.85rem; /* tamaño de texto */
+  font-size: 0.85rem;
 }
-
 .contact-info {
   display: flex;
   align-items: center;
-  gap: 1rem; /* espacio entre items */
+  gap: 1rem;
 }
-
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 0.3rem; /* espacio entre icono y texto */
+  gap: 0.3rem;
 }
-
 .contact-item img {
   height: 16px;
   width: 16px;
   object-fit: contain;
 }
 
+/* ======== NAVBAR ======== */
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to right, #009999, #0066cc); /* degrade azul-verde */
+  background: linear-gradient(to right, #009999, #0066cc);
   padding: 0.5rem 1rem;
   color: #fff;
+  position: relative;
+  z-index: 100;
 }
-
 .logo img {
   height: 50px;
 }
-
 .nav-links {
   display: flex;
   gap: 0.5rem;
 }
-
 .container-buttons {
   width: 100px;
   height: 100%;
-  background-color: red; /* igual al fondo de los botones */
+  background-color: red;
   clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
   flex-shrink: 0;
 }
-
 .nav-links a {
-  background-color: #00b386;  /* verde botón */
+  background-color: #00b386;
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -62,22 +58,63 @@
   font-weight: bold;
   transition: background-color 0.3s;
 }
-
 .nav-links a:hover {
   background-color: #008060;
 }
-
-// .nav-links a:last-child {
-//   background-color: #0066cc; /* azul oscuro para el último botón */
-//   clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%); /* flecha */
-// }
-
 .social-icons {
   display: flex;
   gap: 0.5rem;
 }
-
 .social-icons img {
   height: 30px;
   width: 30px;
+}
+
+/* ======== MENU HAMBURGUESA ======== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 900px) {
+  .topbar {
+    font-size: 0.75rem;
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: linear-gradient(to bottom, #009999, #0066cc);
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .social-icons,
+  .container-buttons {
+    display: none;
+  }
 }
