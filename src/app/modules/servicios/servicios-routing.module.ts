@@ -6,6 +6,9 @@ import { PsgComponent } from './psg/psg.component';
 import { EmgComponent } from './emg/emg.component';
 import { EegComponent } from './eeg/eeg.component';
 import { TestComponent } from './test/test.component';
+import { PotencialesComponent } from './potenciales/potenciales.component';
+import { ConsultaComponent } from './consulta/consulta.component';
+import { PnpsComponent } from './pnps/pnps.component';
 
 const routes: Routes = [
   { path: '', component: InicialServiciosComponent },
@@ -13,7 +16,10 @@ const routes: Routes = [
   { path: 'psg', component: PsgComponent },
   { path: 'emg', component: EmgComponent },
   { path: 'eeg', component: EegComponent },
-  { path: 'test', component: TestComponent }
+  { path: 'test', component: TestComponent },
+  { path: 'pnps', component: PnpsComponent },
+  { path: 'potenciales', component: PotencialesComponent },
+  { path: 'consulta', component: ConsultaComponent }
 ];
 
 @NgModule({

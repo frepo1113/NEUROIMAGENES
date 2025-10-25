@@ -7,9 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./eeg.component.scss']
 })
 export class EegComponent {
-  constructor(private router: Router) {}
-    
-  returnServices() {
-    this.router.navigate(['/page/servicios']);
-  }
+
+    constructor(private router: Router) {}
+        
+    returnServices() {
+      this.router.navigate(['/page/preparacion-examenes']);
+    }
 }

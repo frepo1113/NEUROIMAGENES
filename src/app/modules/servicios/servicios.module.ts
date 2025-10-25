@@ -8,6 +8,9 @@ import { PsgComponent } from './psg/psg.component';
 import { EmgComponent } from './emg/emg.component';
 import { EegComponent } from './eeg/eeg.component';
 import { TestComponent } from './test/test.component';
+import { PotencialesComponent } from './potenciales/potenciales.component';
+import { PnpsComponent } from './pnps/pnps.component';
+import { ConsultaComponent } from './consulta/consulta.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { TestComponent } from './test/test.component';
     PsgComponent,
     EmgComponent,
     EegComponent,
-    TestComponent
+    TestComponent,
+    PotencialesComponent,
+    PnpsComponent,
+    ConsultaComponent,
   ],
   imports: [
     CommonModule,
