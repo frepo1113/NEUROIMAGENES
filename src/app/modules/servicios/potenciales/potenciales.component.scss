@@ -1,0 +1,73 @@
+.servicio-card {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #f9fafc;
+
+  .card-container {
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 2rem;
+
+    .titulo {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #005c99;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+
+      @media (max-width: 900px) {
+        flex-direction: column;
+      }
+
+      .card-text {
+        flex: 2;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+
+        h3 {
+          margin-top: 1.5rem;
+          color: #005c99;
+        }
+
+        ul {
+          margin: 1rem 0;
+          padding-left: 1.5rem;
+
+          li {
+            margin-bottom: 0.6rem;
+          }
+        }
+      }
+
+      .card-images {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}

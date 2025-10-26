@@ -1,0 +1,69 @@
+.neuropsych-section {
+  padding: 3rem 2rem;
+  background: #fafafa;
+
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d2c54;
+    margin-bottom: 2.5rem;
+  }
+
+  .neuro-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    padding: 2rem;
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .neuro-img {
+      width: 45%;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+
+    .neuro-content {
+      width: 55%;
+
+      h3 {
+        font-size: 1.6rem;
+        color: #0d2c54;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        color: #0d2c54;
+        margin-top: 1rem;
+      }
+
+      p, li {
+        color: #333;
+        line-height: 1.6;
+      }
+
+      ul {
+        margin-left: 1.2rem;
+        list-style-type: disc;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .neuro-card {
+      flex-direction: column;
+      .neuro-img, .neuro-content {
+        width: 100%;
+      }
+    }
+  }
+}

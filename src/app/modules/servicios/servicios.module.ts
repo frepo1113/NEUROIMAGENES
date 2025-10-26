@@ -11,6 +11,11 @@ import { TestComponent } from './test/test.component';
 import { PotencialesComponent } from './potenciales/potenciales.component';
 import { PnpsComponent } from './pnps/pnps.component';
 import { ConsultaComponent } from './consulta/consulta.component';
+import { NeurologiaAdultoComponent } from './consulta/neurologia-adulto/neurologia-adulto.component';
+import { NeurologiaPediatricaComponent } from './consulta/neurologia-pediatrica/neurologia-pediatrica.component';
+import { NeuropsicologiaAdultoComponent } from './consulta/neuropsicologia-adulto/neuropsicologia-adulto.component';
+import { NeuropsicologiaPediatricoComponent } from './consulta/neuropsicologia-pediatrico/neuropsicologia-pediatrico.component';
+import { FisiatriaComponent } from './consulta/fisiatria/fisiatria.component';
 
 
 @NgModule({
@@ -24,6 +29,11 @@ import { ConsultaComponent } from './consulta/consulta.component';
     PotencialesComponent,
     PnpsComponent,
     ConsultaComponent,
+    NeurologiaAdultoComponent,
+    NeurologiaPediatricaComponent,
+    NeuropsicologiaAdultoComponent,
+    NeuropsicologiaPediatricoComponent,
+    FisiatriaComponent,
   ],
   imports: [
     CommonModule,
