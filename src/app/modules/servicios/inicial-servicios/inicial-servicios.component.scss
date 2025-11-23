@@ -2,6 +2,20 @@
   display: block;
 }
 
+.banner-cita {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+
+  img {
+    width: 100%;
+    max-width: 220px;  
+    height: auto;
+    border-radius: 12px; 
+  }
+}
+
 .page-wrap.servicios-wrap {
   display: flex;
   max-width: 1200px;
@@ -10,7 +24,6 @@
   padding-right: 28px;
 }
 
-/* ==== Sidebar ==== */
 .sidebar {
   width: 150px;
   background: linear-gradient(180deg, #9ed7cf, #7fc6c0);
@@ -27,7 +40,7 @@
 .logo img {
   width: 120px;
   height: 120px;
-  object-fit: contain; /* o cover, según prefieras */
+  object-fit: contain; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +62,6 @@
   cursor: pointer;
 }
 
-/* ==== Main content ==== */
 .main-content {
   flex: 1;
   padding: 6px 18px 28px 18px;
@@ -74,7 +86,6 @@
   padding: 0 10px;
 }
 
-/* ==== Grid ==== */
 .services-wrapper {
   display: flex;
   justify-content: center;
@@ -91,7 +102,6 @@
   grid-auto-rows: 170px;
 }
 
-/* ==== Service cards ==== */
 .service {
   display: flex;
   flex-direction: column;
@@ -150,7 +160,6 @@
   text-transform: uppercase;
 }
 
-/* ==== Responsive ==== */
 @media (max-width: 980px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
