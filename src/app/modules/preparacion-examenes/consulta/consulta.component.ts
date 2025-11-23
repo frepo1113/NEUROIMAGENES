@@ -13,4 +13,8 @@ export class ConsultaComponent {
   returnServices() {
     this.router.navigate(['/page/preparacion-examenes']);
   }
+
+  goToPage(page: string) {
+    this.router.navigate([`/page/servicios/${page}`]);
+  }
 }

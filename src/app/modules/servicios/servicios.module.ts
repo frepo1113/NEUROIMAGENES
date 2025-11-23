@@ -14,8 +14,10 @@ import { ConsultaComponent } from './consulta/consulta.component';
 import { NeurologiaAdultoComponent } from './consulta/neurologia-adulto/neurologia-adulto.component';
 import { NeurologiaPediatricaComponent } from './consulta/neurologia-pediatrica/neurologia-pediatrica.component';
 import { NeuropsicologiaAdultoComponent } from './consulta/neuropsicologia-adulto/neuropsicologia-adulto.component';
-import { NeuropsicologiaPediatricoComponent } from './consulta/neuropsicologia-pediatrico/neuropsicologia-pediatrico.component';
+import { NeuropsicologiaPediatricaComponent } from './consulta/neuropsicologia-pediatrica/neuropsicologia-pediatrica.component';
 import { FisiatriaComponent } from './consulta/fisiatria/fisiatria.component';
+import { AplicacionToxinaComponent } from './consulta/aplicacion-toxina/aplicacion-toxina.component';
+import { InfiltracionBloqueosComponent } from './consulta/infiltracion-bloqueos/infiltracion-bloqueos.component';
 
 
 @NgModule({
@@ -32,8 +34,10 @@ import { FisiatriaComponent } from './consulta/fisiatria/fisiatria.component';
     NeurologiaAdultoComponent,
     NeurologiaPediatricaComponent,
     NeuropsicologiaAdultoComponent,
-    NeuropsicologiaPediatricoComponent,
+    NeuropsicologiaPediatricaComponent,
     FisiatriaComponent,
+    AplicacionToxinaComponent,
+    InfiltracionBloqueosComponent,
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,20 @@
-.eeg-container {
+.servicio-card {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #f9fafc;
+}
+
+.card-container {
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.eeg-computarizado-container {
   padding: 40px;
   max-width: 1200px;
   margin: auto;
@@ -10,12 +26,14 @@
     font-size: 2.4rem;
     margin-bottom: 40px;
     color: #002d72;
+    font-weight: 600;
   }
 
   h2 {
     color: #005baa;
     margin-top: 30px;
     font-size: 1.8rem;
+    font-weight: 500;
   }
 
   section {
@@ -32,19 +50,7 @@
       flex: 1;
       font-size: 1.1rem;
       line-height: 1.7;
-    }
-
-    .image {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-
-      img {
-        width: 100%;
-        max-width: 500px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      }
+      text-align: justify;
     }
   }
 
@@ -61,12 +67,6 @@
     margin-bottom: 15px;
   }
 
-  .utility {
-    background-color: #f3f8ff;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
   @media (max-width: 768px) {
     .intro {
       flex-direction: column;
@@ -79,5 +79,26 @@
     h2 {
       font-size: 1.4rem;
     }
+
+    ul {
+      font-size: 1rem;
+    }
   }
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.title {
+  text-align: center;
 }

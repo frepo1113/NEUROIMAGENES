@@ -9,6 +9,14 @@ import { EegComponent } from './eeg/eeg.component';
 import { PnpsComponent } from './pnps/pnps.component';
 import { PotencialesComponent } from './potenciales/potenciales.component';
 import { ConsultaComponent } from './consulta/consulta.component';
+import { FisiatriaComponent } from './consulta/fisiatria/fisiatria.component';
+import { NeurologiaAdultoComponent } from './consulta/neurologia-adulto/neurologia-adulto.component';
+import { NeurologiaPediatricaComponent } from './consulta/neurologia-pediatrica/neurologia-pediatrica.component';
+import { NeuropsicologiaAdultoComponent } from './consulta/neuropsicologia-adulto/neuropsicologia-adulto.component';
+import { NeuropsicologiaPediatricaComponent } from '../preparacion-examenes/consulta/neuropsicologia-pediatrica/neuropsicologia-pediatrica.component';
+import { InfiltracionBloqueosComponent } from './consulta/infiltracion-bloqueos/infiltracion-bloqueos.component';
+import { AplicacionToxinaComponent } from './consulta/aplicacion-toxina/aplicacion-toxina.component';
+
 
 const routes: Routes = [
   { path: '', component: PreparacionExamenesComponent },
@@ -19,7 +27,14 @@ const routes: Routes = [
     { path: 'test', component: TestComponent },
     { path: 'pnps', component: PnpsComponent },
     { path: 'potenciales', component: PotencialesComponent },
-    { path: 'consulta', component: ConsultaComponent }
+    { path: 'consulta', component: ConsultaComponent },
+     { path: 'fisiatria', component: FisiatriaComponent },
+      { path: 'neurologia-adulto', component: NeurologiaAdultoComponent },
+      { path: 'neurologia-pediatrica', component: NeurologiaPediatricaComponent },
+      { path: 'neuropsicologia-pediatrica', component: NeuropsicologiaAdultoComponent },
+      { path: 'neuropsicologia-adulto', component: NeuropsicologiaPediatricaComponent },
+      { path: 'infiltracion-bloqueos', component: InfiltracionBloqueosComponent },
+      { path: 'aplicacion-toxina', component: AplicacionToxinaComponent },
   ];
 
 @NgModule({

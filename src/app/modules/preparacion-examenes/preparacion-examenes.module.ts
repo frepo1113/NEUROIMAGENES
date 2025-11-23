@@ -11,6 +11,13 @@ import { PnpsComponent } from './pnps/pnps.component';
 import { PotencialesComponent } from './potenciales/potenciales.component';
 import { PsgComponent } from './psg/psg.component';
 import { VtmComponent } from './vtm/vtm.component';
+import { InfiltracionBloqueosComponent } from './consulta/infiltracion-bloqueos/infiltracion-bloqueos.component';
+import { AplicacionToxinaComponent } from './consulta/aplicacion-toxina/aplicacion-toxina.component';
+import { FisiatriaComponent } from './consulta/fisiatria/fisiatria.component';
+import { NeurologiaAdultoComponent } from './consulta/neurologia-adulto/neurologia-adulto.component';
+import { NeurologiaPediatricaComponent } from './consulta/neurologia-pediatrica/neurologia-pediatrica.component';
+import { NeuropsicologiaAdultoComponent } from './consulta/neuropsicologia-adulto/neuropsicologia-adulto.component';
+import { NeuropsicologiaPediatricaComponent } from './consulta/neuropsicologia-pediatrica/neuropsicologia-pediatrica.component';
 
 
 @NgModule({
@@ -23,7 +30,14 @@ import { VtmComponent } from './vtm/vtm.component';
     PnpsComponent,
     PotencialesComponent,
     PsgComponent,
-    VtmComponent
+    VtmComponent,
+    InfiltracionBloqueosComponent,
+    AplicacionToxinaComponent,
+    FisiatriaComponent,
+    NeurologiaAdultoComponent,
+    NeurologiaPediatricaComponent,
+    NeuropsicologiaAdultoComponent,
+    NeuropsicologiaPediatricaComponent
   ],
   imports: [
     CommonModule,
