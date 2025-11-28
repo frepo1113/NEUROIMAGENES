@@ -31,8 +31,8 @@ const routes: Routes = [
      { path: 'fisiatria', component: FisiatriaComponent },
       { path: 'neurologia-adulto', component: NeurologiaAdultoComponent },
       { path: 'neurologia-pediatrica', component: NeurologiaPediatricaComponent },
-      { path: 'neuropsicologia-pediatrica', component: NeuropsicologiaAdultoComponent },
-      { path: 'neuropsicologia-adulto', component: NeuropsicologiaPediatricaComponent },
+      { path: 'neuropsicologia-pediatrica', component: NeuropsicologiaPediatricaComponent },
+      { path: 'neuropsicologia-adulto', component: NeuropsicologiaAdultoComponent },
       { path: 'infiltracion-bloqueos', component: InfiltracionBloqueosComponent },
       { path: 'aplicacion-toxina', component: AplicacionToxinaComponent },
   ];

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContenidoComponent } from './contenido/contenido.component';
 import { HomeComponent } from './home/home.component';
-import { ContactenosComponent } from './contactenos/contactenos.component';
+import { MetodosdepagoComponent } from './metodosdepago/metodosdepago.component';
 
 const routes: Routes = [
   {
@@ -14,9 +14,10 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'contactenos',
-        component: ContactenosComponent
+        path: 'metodosdepago',
+        component: MetodosdepagoComponent
       },
+
       {
         path: 'equipo-medico',
         loadChildren: () => import('../equipo-medico/equipo-medico.module').then(m => m.EquipoMedicoModule)

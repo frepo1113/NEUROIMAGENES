@@ -14,7 +14,7 @@
   padding: 2rem;
 }
 
-.Monitorizacion-container {
+.Metodosdepago-container {
   padding: 40px;
   max-width: 1200px;
   margin: auto;
@@ -90,6 +90,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-bottom: 2%;
 
   img {
     width: 100%;
@@ -97,6 +98,13 @@
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
+}
+
+.img-espaciada {
+  display: flex;        
+  flex-direction: column;
+  gap: 30px;   
+  margin-bottom: 30px;
 }
 
 .title {

@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { ContenidoComponent } from './contenido/contenido.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { ContactenosComponent } from './contactenos/contactenos.component';
+import { MetodosdepagoComponent } from './metodosdepago/metodosdepago.component';
 
 
 @NgModule({
@@ -15,7 +15,7 @@ import { ContactenosComponent } from './contactenos/contactenos.component';
     ContenidoComponent,
     FooterComponent,
     HomeComponent,
-    ContactenosComponent
+    MetodosdepagoComponent
   ],
   imports: [
     CommonModule,

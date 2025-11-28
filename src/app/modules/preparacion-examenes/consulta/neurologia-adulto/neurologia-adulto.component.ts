@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-neurologia-adulto',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./neurologia-adulto.component.scss']
 })
 export class NeurologiaAdultoComponent {
+
+  constructor (private router: Router) {}
+  
+    returnServices() {
+      this.router.navigate(['/page/preparacion-examenes/consulta']);
+    }
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-infiltracion-bloqueos',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./infiltracion-bloqueos.component.scss']
 })
 export class InfiltracionBloqueosComponent {
+
+   constructor (private router: Router) {}
+      
+        returnServices() {
+          this.router.navigate(['/page/preparacion-examenes/consulta']);
+        }
 
 }

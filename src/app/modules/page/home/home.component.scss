@@ -1,8 +1,8 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* ocupa toda la altura de la ventana */
-  background-image: url('/assets/images/Foto Neuro.png'); /* cambia por tu imagen */
+  height: 100vh;
+  background-image: url('/assets/images/Foto Neuro.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,9 +16,9 @@
     padding: 2rem;
     text-align: center;
     h1 {
-      font-size: 1.5rem; /* tamaño base */
+      font-size: 1.5rem; 
       font-weight: bold;
-      color: #004080; /* azul corporativo */
+      color: #004080; 
       line-height: 1.0;
       text-align: above;
 
@@ -30,7 +30,6 @@
   }
 }
 
-/* RESPONSIVE: agrandar más en pantallas grandes */
 @media (min-width: 768px) {
   .hero .hero-overlay h1 {
     font-size: 1.5rem;
