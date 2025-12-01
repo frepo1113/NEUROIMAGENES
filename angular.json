@@ -97,10 +97,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles\.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
